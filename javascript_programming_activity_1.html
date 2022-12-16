@@ -1,0 +1,32 @@
+<script>
+
+let fname = prompt("What is your first name?");
+let sname = prompt("What is your last name?");
+let addre = prompt("Where do you live?");
+let age = prompt("How old are you?");
+
+age = parseInt(age);
+agecat = "";
+
+if(age >= 0 && age <= 1){
+agecat = "Infant";
+} else if (age >= 2 && age <= 4){
+agecat = "Toddler";
+} else if (age >= 5 && age <= 12){
+agecat = "Child";
+} else if (age >= 13 && age <= 19){
+agecat = "Teen";
+} else if (age >= 20 && age <= 39){
+agecat = "Adult";
+} else if (age >= 40 && age <= 59){
+agecat = "Middle Age Adult";
+} else if (age >= 60 && age <= 118){
+agecat = "Senior Adult";
+} else if (age >= 119){
+agecat = "Senior Adult & older than the oldest person alive. Congrats!";
+}
+
+alert('Hello, ' +fname + ' ' +sname +'! How is ' + addre  + ' this time of year? Please check the console for a message.');
+console.log('Age is equals to ' + age + '. ' + agecat + '!');
+
+</script>
